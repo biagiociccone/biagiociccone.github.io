@@ -3,14 +3,16 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css" />
         <title>Dott. Biagio Ciccone</title>
     </head>
 
     <body class="bg-white text-gray-800 antialiased">
         <!-- HEADER -->
         <header class="max-w-7xl mx-auto px-6 py-6 flex items-center">
-            <div class="text-xl font-semibold tracking-wide text-gray-900 transition-colors duration-300 hover:text-[#B6BE11]">
+            <div
+                class="text-xl font-semibold tracking-wide text-gray-900 transition-colors duration-300 hover:text-[#B6BE11]"
+            >
                 <a href="#" class="inline-flex items-center">
                     <img
                         src="./images/logo.png"
@@ -27,41 +29,48 @@
 
         <!-- HERO -->
         <section class="max-w-7xl mx-auto px-6 mt-10 pb-8">
-            <h1 class="flex items-center gap-4 text-[#B6BE11] uppercase tracking-[0.25em] text-sm font-medium">
+            <h1
+                class="flex items-center gap-4 text-[#B6BE11] uppercase tracking-[0.25em] text-sm font-medium"
+            >
                 <span class="w-12 h-px bg-[#B6BE11]"></span>
                 Specialista in neurofisiopatologia
             </h1>
 
-            <p class="mt-10 text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tight font-serif font-light max-w-4xl text-gray-900">
+            <p
+                class="mt-10 text-5xl md:text-6xl lg:text-7xl leading-tight tracking-tight font-serif font-light max-w-4xl text-gray-900"
+            >
                 La conoscenza è un viaggio fatto dalla curiosità nel mondo della
-                <span class="text-[#B6BE11] italic">scienza</span>.
-                Viaggiare sempre significa arricchire il proprio bagaglio di
+                <span class="text-[#B6BE11] italic">scienza</span>. Viaggiare
+                sempre significa arricchire il proprio bagaglio di
                 <span class="text-[#B6BE11] italic">conoscenze</span>.
             </p>
 
-            <div class="mt-10 flex flex-wrap gap-4">
+            <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-4">
                 <a
                     href="https://wa.me/3347303062"
-                    class="inline-flex items-center justify-center rounded-full bg-[#B6BE11] px-6 py-3 text-white font-medium shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#9fa70f] hover:shadow-lg"
+                    class="inline-flex items-center justify-center text-center rounded-full bg-[#B6BE11] px-6 py-3 text-white font-bold leading-tight shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#9fa70f] hover:shadow-lg"
                 >
                     Prenota su WhatsApp
                 </a>
 
                 <a
                     href="#chi-sono"
-                    class="inline-flex items-center justify-center rounded-full border border-gray-300 bg-white px-6 py-3 font-medium text-gray-800 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-[#B6BE11] hover:text-[#B6BE11] hover:shadow-md"
+                    class="inline-flex items-center justify-center text-center rounded-full border border-gray-300 bg-white px-6 py-3 font-bold text-gray-800 leading-tight transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-[#B6BE11] hover:text-[#B6BE11] hover:shadow-md"
                 >
                     Scopri chi sono
+                    <span>↓</span>
                 </a>
             </div>
         </section>
 
+
         <!-- CHI SONO -->
-        <section
-            id="chi-sono"
-            class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center"
-        >
-            <div class="w-full h-105 rounded-3xl bg-linear-to-br from-gray-100 to-gray-200 flex items-center justify-center text-gray-500 shadow-sm transition-all duration-500 ease-out hover:shadow-lg overflow-hidden">
+        <section id="chi-sono" class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- IMMAGINE -->
+            <div
+                class="w-full h-full rounded-3xl bg-linear-to-br from-gray-100 to-gray-200 flex items-center justify-center text-gray-500 shadow-sm transition-all duration-500 ease-out hover:shadow-lg overflow-hidden"
+            >
                 <a href="#" class="w-full h-full">
                     <img
                         src="./images/profilo.png"
@@ -72,112 +81,431 @@
                     />
                 </a>
             </div>
-
+        
+            <!-- TESTO -->
             <div>
-                <h2 class="text-3xl md:text-4xl font-serif mb-6 text-gray-900">
+        
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6 text-gray-900">
                     Chi sono
                 </h2>
-
-                <p class="text-gray-700 leading-relaxed text-lg">
-                    Sono il <strong>Dott. Biagio Ciccone</strong>, medico specialista in
-                    <strong>Neurofisiopatologia (Neurofisiologia Clinica)</strong>.
+        
+                <!-- SOCIAL + CV -->
+                <div class="mt-6 flex items-center gap-3 text-sm text-gray-500">
+                
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/DottorBiagioCiccone"
+                       target="_blank"
+                       aria-label="Facebook"
+                       class="opacity-70 hover:opacity-100 transition">
+                        <img src="./images/facebook.svg" alt="Facebook" class="w-5 h-5">
+                    </a>
+                
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/biagio.ciccone"
+                       target="_blank"
+                       aria-label="Instagram"
+                       class="opacity-70 hover:opacity-100 transition">
+                        <img src="./images/instagram.svg" alt="Instagram" class="w-5 h-5">
+                    </a>
+                
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@dott.biagiociccone5961"
+                       target="_blank"
+                       aria-label="YouTube"
+                       class="opacity-70 hover:opacity-100 transition">
+                        <img src="./images/youtube.svg" alt="YouTube" class="w-5 h-5">
+                    </a>
+                
+                    <span class="mx-1 text-gray-300">·</span>
+                
+                    <!-- CV discreto -->
+                    <a href="#"
+                       target="_blank"
+                       class="hover:text-[#B6BE11] transition">
+                        CV
+                    </a>
+                
+                </div>
+                
+                
+                <p class="mt-4 text-gray-700 leading-relaxed text-lg">
+                    Nasco nel febbraio del <strong>1966</strong> mentre Adriano
+                    Celentano cantava il ragazzo della via Gluck e veniva
+                    escluso dalla finale del festival di Sanremo, entrando poi
+                    di diritto nella leggenda della musica leggera italiana.
                 </p>
-
+        
                 <p class="mt-4 text-gray-700 leading-relaxed">
-                    Mi occupo della diagnosi e del trattamento delle patologie del sistema
-                    nervoso centrale e periferico, utilizzando tecniche diagnostiche
-                    neurofisiologiche come elettroencefalografia ed elettroneuromiografia.
+                    Studiavo e lavoravo. Oggi lavoro e studio.
                 </p>
-
-                <a
-                    href="#servizi"
-                    class="inline-flex items-center mt-6 font-semibold text-[#B6BE11] transition-all duration-300 hover:translate-x-1 hover:opacity-80"
-                >
-                    Scopri i servizi offerti →
-                </a>
+        
+                <p class="mt-4 text-gray-700 leading-relaxed">
+                    Pochi viaggi prima della laurea in
+                    <strong>Medicina e Chirurgia nel 1993</strong>, ma tanti
+                    spostamenti per studio e formazione sulla direttrice Napoli
+                    – Pavia dal 1995 al 1999, anno della mia specializzazione in
+                    <strong>Neurofisiopatologia</strong> presso l’Istituto
+                    Neurologico “Casimiro Mondino” IRCCS.
+                </p>
+        
+                <p class="mt-4 text-gray-700 leading-relaxed">
+                    Anche oggi mi sposto spesso per lavoro e studio. Sono
+                    dinamico e motivato, non mi piace la monotonia, amo la
+                    ricerca e la conoscenza, la buona compagnia e la serenità.
+                </p>
+                
+        
+                <!-- CTA -->
+                <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-4">
+        
+                    <!-- CTA -->
+                    <a
+                        href="#contatti"
+                        class="inline-flex items-center justify-center text-center rounded-full bg-[#B6BE11] px-6 py-3 text-white font-bold leading-tight shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#9fa70f] hover:shadow-lg"
+                    >
+                        Contattami
+                    </a>
+        
+                    <!-- CTA -->
+                    <a
+                        href="#servizi"
+                        class="inline-flex items-center justify-center text-center rounded-full border border-gray-300 bg-white px-6 py-3 font-bold text-gray-800 leading-tight transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-[#B6BE11] hover:text-[#B6BE11] hover:shadow-md"
+                    >
+                        Scopri i servizi offerti
+                        <span class="ml-1">↓</span>
+                    </a>
+        
+                </div>
+        
             </div>
         </section>
 
         <!-- SERVIZI -->
         <section id="servizi" class="max-w-7xl mx-auto px-6 py-24">
-            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-12 text-gray-900">
+            <h2
+                class="text-3xl md:text-4xl font-serif font-bold mb-12 text-gray-900"
+            >
                 Servizi
             </h2>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <!-- EMG -->
-                <div class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#B6BE11]/30 hover:shadow-xl">
+                <div
+                    class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#B6BE11]/30 hover:shadow-xl"
+                >
                     <div class="flex items-center gap-3 mb-3">
                         <span class="text-xl">⚡</span>
-                        <h3 class="text-lg font-semibold text-gray-900">E.M.G.</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">
+                            E.M.G.
+                        </h3>
                     </div>
                     <p class="text-sm leading-relaxed text-gray-600">
-                        Esame per valutare la funzionalità di nervi e muscoli.
+                        Esame diagnostico che analizza l'attività di nervi e muscoli, utile per valutare formicolii, debolezza o dolore agli arti.
                     </p>
                 </div>
 
-                <!-- Visita neurologica -->
-                <div class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#B6BE11]/30 hover:shadow-xl">
-                    <div class="flex items-center gap-3 mb-3">
-                        <span class="text-xl">🧠</span>
-                        <h3 class="text-lg font-semibold text-gray-900">Visita neurologica</h3>
-                    </div>
-                    <p class="text-sm leading-relaxed text-gray-600">
-                        Valutazione specialistica delle patologie neurologiche.
-                    </p>
-                </div>
 
                 <!-- Cefalee -->
-                <div class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#B6BE11]/30 hover:shadow-xl">
+                <div
+                    class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#B6BE11]/30 hover:shadow-xl"
+                >
                     <div class="flex items-center gap-3 mb-3">
                         <span class="text-xl">💥</span>
-                        <h3 class="text-lg font-semibold text-gray-900">Cefalee</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">
+                            Cefalee
+                        </h3>
                     </div>
                     <p class="text-sm leading-relaxed text-gray-600">
-                        Diagnosi e trattamento delle principali forme di mal di testa.
+                        Diagnosi e trattamento delle principali forme di mal di testa, come emicrania e cefalea tensiva, con approccio mirato.
                     </p>
                 </div>
 
                 <!-- Demenze -->
-                <div class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#B6BE11]/30 hover:shadow-xl">
+                <div
+                    class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#B6BE11]/30 hover:shadow-xl"
+                >
                     <div class="flex items-center gap-3 mb-3">
                         <span class="text-xl">🧩</span>
-                        <h3 class="text-lg font-semibold text-gray-900">Demenze</h3>
+                        <h3 class="text-lg font-semibold text-gray-900">
+                            Demenze
+                        </h3>
                     </div>
                     <p class="text-sm leading-relaxed text-gray-600">
-                        Valutazione cognitiva e disturbi della memoria.
+                        Valutazione della memoria e delle funzioni cognitive per individuare precocemente eventuali difficoltà o disturbi cognitivi.
                     </p>
                 </div>
+                
+                <!-- Visita neurologica -->
+                <div
+                    class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#B6BE11]/30 hover:shadow-xl"
+                >
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="text-xl">🧠</span>
+                        <h3 class="text-lg font-semibold text-gray-900">
+                            Visita neurologica
+                        </h3>
+                    </div>
+                    <p class="text-sm leading-relaxed text-gray-600">
+                        Valutazione specialistica per disturbi del sistema nervoso come vertigini, tremori, perdita di sensibilità o problemi di memoria.
+                    </p>
+                </div>
+                
+            </div>
+            
+            <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-4">
+                <a
+                    href="#contatti"
+                    class="inline-flex items-center justify-center text-center rounded-full bg-[#B6BE11] px-6 py-3 text-white font-bold leading-tight shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#9fa70f] hover:shadow-lg"
+                >
+                   Contattami
+                </a>
+
+                <a
+                    href="#materialiutili"
+                    class="inline-flex items-center justify-center text-center rounded-full border border-gray-300 bg-white px-6 py-3 font-bold text-gray-800 leading-tight transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-[#B6BE11] hover:text-[#B6BE11] hover:shadow-md"
+                >
+                    Materiali utili
+                    <span>↓</span>
+                </a>
             </div>
         </section>
+
+        <!-- MATERIALE UTILE -->
+        <section id="materialiutili" class="max-w-7xl mx-auto px-6 py-24">
+            <div class="max-w-3xl">
+                <p
+                    class="text-sm font-medium uppercase tracking-[0.18em] text-[#B6BE11]"
+                >
+                    Materiale utile
+                </p>
+                <h2
+                    class="mt-3 text-3xl md:text-4xl font-serif font-bold text-gray-900"
+                >
+                    Materiale utile per la visita
+                </h2>
+                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                    Scarica alcuni documenti utili da leggere o compilare, per
+                    facilitare la valutazione specialistica.
+                </p>
+            </div>
+
+            <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Diario della cefalea -->
+                <div
+                    class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#B6BE11]/30 hover:shadow-xl"
+                >
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">📘</span>
+                        <h3 class="text-lg font-semibold text-gray-900">
+                            Diario della cefalea
+                        </h3>
+                    </div>
+
+                    <p class="text-sm leading-relaxed text-gray-600">
+                        Un diario semplice per annotare mensilmente gli attacchi
+                        di mal di testa e la loro intensità, utile per capire
+                        meglio insieme come si manifesta la cefalea.
+                    </p>
+
+                    <a
+                        href="https://drive.google.com/file/d/1HHLBQ7qKx_D7ilpw4XgmFeapnvU35-wt/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center mt-6 rounded-full bg-[#B6BE11] px-6 py-3 text-white font-medium shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#9fa70f] hover:shadow-lg"
+                    >
+                        Apri PDF
+                    </a>
+                </div>
+
+                <!-- Insomnia Severity Index -->
+                <div
+                    class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#B6BE11]/30 hover:shadow-xl"
+                >
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">🌙</span>
+                        <h3 class="text-lg font-semibold text-gray-900">
+                            Insomnia Severity Index
+                        </h3>
+                    </div>
+
+                    <p class="text-sm leading-relaxed text-gray-600">
+                        Un breve questionario che può aiutarti a capire se i
+                        tuoi problemi di sonno potrebbero essere legati
+                        all’insonnia.
+                    </p>
+
+                    <a
+                        href="https://drive.google.com/file/d/1hfRctqxb3aa-QieJqSxHWoJwR0fInwiC/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center mt-6 rounded-full bg-[#B6BE11] px-6 py-3 text-white font-medium shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#9fa70f] hover:shadow-lg"
+                    >
+                        Apri PDF
+                    </a>
+                </div>
+
+                <!-- Demenza -->
+                <div
+                    class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-2 hover:border-[#B6BE11]/30 hover:shadow-xl"
+                >
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-2xl">🧩</span>
+                        <h3 class="text-lg font-semibold text-gray-900">
+                            Materiale informativo sulla demenza
+                        </h3>
+                    </div>
+
+                    <p class="text-sm leading-relaxed text-gray-600">
+                        Una guida informativa per capire meglio la demenza,
+                        pensata per chi ne soffre e per chi se ne prende cura
+                        ogni giorno.
+                    </p>
+
+                    <a
+                        href="https://drive.google.com/file/d/1E1-al4kMsybV7tQqVhDqxwidThajA4GE/view"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center mt-6 rounded-full bg-[#B6BE11] px-6 py-3 text-white font-medium shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#9fa70f] hover:shadow-lg"
+                    >
+                        Apri PDF
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-10 flex flex-col gap-4 sm:flex-row sm:gap-4">
+                <a
+                    href="#contatti"
+                    class="inline-flex items-center justify-center text-center rounded-full bg-[#B6BE11] px-6 py-3 text-white font-bold leading-tight shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#9fa70f] hover:shadow-lg"
+                >
+                   Contattami
+                </a>
+
+                <a
+                    href="#team"
+                    class="inline-flex items-center justify-center text-center rounded-full border border-gray-300 bg-white px-6 py-3 font-bold text-gray-800 leading-tight transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-[#B6BE11] hover:text-[#B6BE11] hover:shadow-md"
+                >
+                    Team
+                    <span>↓</span>
+                </a>
+            </div>
+            
+        </section>
+
+        <!-- TEAM -->
+        <section id="team" class="max-w-7xl mx-auto px-6 py-24">
         
+            <!-- INTRO -->
+            <div class="max-w-3xl">
+                <p class="text-sm font-medium uppercase tracking-[0.18em] text-[#B6BE11]">
+                    Team
+                </p>
         
+                <h2 class="mt-3 text-3xl md:text-4xl font-serif font-bold text-gray-900">
+                    Professionalità che lavorano insieme
+                </h2>
+        
+                <p class="mt-4 text-lg leading-relaxed text-gray-600">
+                    Lo studio collabora con professionisti che condividono attenzione,
+                    ascolto e cura della persona.
+                </p>
+            </div>
+        
+            <!-- GRID TEAM -->
+            <div class="mt-12 grid gap-8 md:grid-cols-2">
+        
+                <!-- CARD PROFESSIONISTA -->
+                <article class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-xl">
+        
+                    <!-- FOTO COMMENTATA TEMPORANEAMENTE -->
+                    <!--
+                    <div class="mb-6 overflow-hidden rounded-2xl bg-gray-100">
+                        <img
+                            src="./images/griso-giovanna.png"
+                            alt="Dott.ssa Griso Giovanna"
+                            class="w-full h-full object-cover"
+                            loading="lazy"
+                            decoding="async"
+                        />
+                    </div>
+                    -->
+        
+                    <p class="text-sm font-semibold uppercase tracking-widest text-[#B6BE11]">
+                        Psicologa · Psicoterapeuta
+                    </p>
+        
+                    <h3 class="mt-2 text-2xl font-serif text-gray-900">
+                        Dott.ssa Griso Giovanna
+                    </h3>
+        
+                    <p class="mt-4 text-gray-700 leading-relaxed">
+                        Accompagna le persone in percorsi di psicoterapia e supporto
+                        psicologico, aiutandole ad affrontare momenti di difficoltà e
+                        ritrovare equilibrio nelle relazioni e nella vita quotidiana.
+                    </p>
+        
+                    <!-- PULSANTE CV -->
+                    <div class="mt-6">
+                        <a
+                            href="https://drive.google.com/file/d/121NbH-FOVvfujmHYFYhruUu9OBhLtjsC/view"
+                            class="inline-flex items-center justify-center rounded-full border border-gray-300 bg-white px-6 py-3 font-semibold text-gray-800 transition-all duration-300 ease-out hover:-translate-y-0.5 hover:border-[#B6BE11] hover:text-[#B6BE11] hover:shadow-md"
+                        >
+                            Visualizza CV
+                        </a>
+                    </div>
+        
+                </article>
+        
+            </div>
+        
+            <!-- CTA CONTATTI -->
+            <div class="mt-12">
+                <a
+                    href="#contatti"
+                    class="inline-flex items-center justify-center gap-2 rounded-full bg-[#B6BE11] px-7 py-3 font-semibold text-white shadow-sm transition-all duration-300 ease-out hover:-translate-y-0.5 hover:bg-[#9fa70f] hover:shadow-lg"
+                >
+                    Contattami
+                    <span>↓</span>
+                </a>
+            </div>
+        
+        </section>
+
         <!-- CONTATTI -->
         <section id="contatti" class="max-w-7xl mx-auto px-6 py-24">
             <div class="max-w-3xl">
-                <p class="text-sm font-medium uppercase tracking-[0.18em] text-[#B6BE11]">
+                <p
+                    class="text-sm font-medium uppercase tracking-[0.18em] text-[#B6BE11]"
+                >
                     Contatti
                 </p>
-                <h2 class="mt-3 text-3xl md:text-4xl font-serif font-bold text-gray-900">
+                <h2
+                    class="mt-3 text-3xl md:text-4xl font-serif font-bold text-gray-900"
+                >
                     Prenotazioni e informazioni
                 </h2>
                 <p class="mt-4 mb-10 text-lg leading-relaxed text-gray-600">
-                    Per informazioni o prenotazioni puoi scrivermi su WhatsApp oppure chiamarmi direttamente.
+                    Per informazioni o prenotazioni puoi scrivermi su WhatsApp
+                    oppure chiamarmi direttamente.
                 </p>
             </div>
-        
-            <div class="grid gap-6 md:grid-cols-2">
+
+            <div class="grid gap-6 md:grid-cols-2 mt-10">
                 <!-- CARD CONTATTI -->
-                <div class="flex h-full flex-col justify-between rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-lg">
+                <div
+                    class="flex h-full flex-col justify-between rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-lg"
+                >
                     <div>
-                        <p class="mb-3 text-sm font-semibold uppercase tracking-widest text-[#B6BE11]">
+                        <p
+                            class="mb-3 text-sm font-semibold uppercase tracking-widest text-[#B6BE11]"
+                        >
                             Contatto diretto
                         </p>
-        
+
                         <p class="mb-6 leading-relaxed text-gray-600">
-                            Scegli il canale che preferisci per richiedere informazioni, disponibilità o prenotare una visita.
+                            Scegli il canale che preferisci per richiedere
+                            informazioni, disponibilità o prenotare una visita.
                         </p>
-        
+
                         <div class="flex flex-col gap-4">
                             <a
                                 href="https://wa.me/393347303062"
@@ -185,33 +513,36 @@
                             >
                                 💬 Scrivimi su WhatsApp
                             </a>
-        
+
                             <a
                                 href="tel:+393347303062"
                                 class="inline-flex w-full items-center justify-center gap-3 rounded-full border border-gray-300 bg-white px-7 py-3 font-semibold text-gray-800 transition-all duration-300 ease-out hover:border-[#B6BE11] hover:text-[#B6BE11] hover:shadow-md"
                             >
-                                📞 Chiamami: +39 334 730 3062
+                                📞+39 334 730 3062
                             </a>
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- CARD STUDIO -->
-                <div class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-lg">
-                    
-                    <p class="mb-3 text-sm font-semibold uppercase tracking-widest text-[#B6BE11]">
+                <div
+                    class="rounded-3xl border border-gray-200 bg-white p-8 shadow-sm transition-all duration-500 ease-out hover:-translate-y-1 hover:shadow-lg"
+                >
+                    <p
+                        class="mb-3 text-sm font-semibold uppercase tracking-widest text-[#B6BE11]"
+                    >
                         Studio Medico
                     </p>
-                
+
                     <div class="flex items-start gap-3 text-gray-700 mb-6">
                         <span class="mt-0.5 text-lg">📍</span>
-                
+
                         <p class="leading-relaxed">
                             Corso Europa, 32<br />
                             80039, Saviano (NA)
                         </p>
                     </div>
-                
+
                     <a
                         href="https://maps.app.goo.gl/A8PULCEtiLWUqXYX6"
                         target="_blank"
@@ -220,16 +551,15 @@
                     >
                         Vai alla mappa
                     </a>
-                
                 </div>
             </div>
         </section>
-        
-        
-        
+
         <!-- FOOTER -->
         <footer class="mt-24 border-t border-gray-200">
-            <div class="max-w-7xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-3">
+            <div
+                class="max-w-7xl mx-auto px-6 py-12 grid gap-10 md:grid-cols-3"
+            >
                 <!-- Identità -->
                 <div>
                     <p class="text-lg font-semibold text-gray-900">
@@ -246,7 +576,6 @@
                         </a>
                     </p>
 
-
                     <p class="mt-4 leading-relaxed text-gray-600">
                         Corso Europa, 32<br />
                         80039 Saviano (NA)
@@ -255,30 +584,66 @@
 
                 <!-- Navigazione -->
                 <div>
-                    <p class="mb-4 text-sm font-semibold uppercase tracking-widest text-[#B6BE11]">
+                    <p
+                        class="mb-4 text-sm font-semibold uppercase tracking-widest text-[#B6BE11]"
+                    >
                         Navigazione
                     </p>
 
                     <nav class="flex flex-col gap-2 text-gray-600">
-                        <a href="#chi-sono" class="transition-colors duration-300 hover:text-[#B6BE11]">Chi sono</a>
-                        <a href="#servizi" class="transition-colors duration-300 hover:text-[#B6BE11]">Servizi</a>
-                        <a href="#contatti" class="transition-colors duration-300 hover:text-[#B6BE11]">Contatti</a>
-                        <a href="./pubsanitaria.html" class="transition-colors duration-300 hover:text-[#B6BE11]">Pubblicità Sanitaria</a>
+                        <a
+                            href="#chi-sono"
+                            class="transition-colors duration-300 hover:text-[#B6BE11]"
+                            >Chi sono</a
+                        >
+                        <a
+                            href="#servizi"
+                            class="transition-colors duration-300 hover:text-[#B6BE11]"
+                            >Servizi</a
+                        >
+                        <a
+                            href="#materialiutili"
+                            class="transition-colors duration-300 hover:text-[#B6BE11]"
+                            >Materiale utile</a
+                        >
+                        <a
+                            href="#team"
+                            class="transition-colors duration-300 hover:text-[#B6BE11]"
+                            >Team</a
+                        >
+                        <a
+                            href="#contatti"
+                            class="transition-colors duration-300 hover:text-[#B6BE11]"
+                            >Contatti</a
+                        >
+                        <a
+                            href="./dichiarazione.html"
+                            class="transition-colors duration-300 hover:text-[#B6BE11]"
+                            >Pubblicità Sanitaria</a
+                        >
                     </nav>
                 </div>
 
                 <!-- Contatti -->
                 <div>
-                    <p class="mb-4 text-sm font-semibold uppercase tracking-widest text-[#B6BE11]">
+                    <p
+                        class="mb-4 text-sm font-semibold uppercase tracking-widest text-[#B6BE11]"
+                    >
                         Contatti
                     </p>
 
                     <div class="flex flex-col gap-2 text-gray-600">
-                        <a href="https://wa.me/3347303062" class="transition-colors duration-300 hover:text-[#B6BE11]">
+                        <a
+                            href="https://wa.me/3347303062"
+                            class="transition-colors duration-300 hover:text-[#B6BE11]"
+                        >
                             WhatsApp
                         </a>
 
-                        <a href="tel:+393347303062" class="transition-colors duration-300 hover:text-[#B6BE11]">
+                        <a
+                            href="tel:+393347303062"
+                            class="transition-colors duration-300 hover:text-[#B6BE11]"
+                        >
                             +39 3347303062
                         </a>
                     </div>
@@ -286,8 +651,12 @@
             </div>
 
             <div class="border-t border-gray-100">
-                <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-2 text-sm text-gray-500 md:flex-row md:justify-between">
-                    <p>© 2026 Dott. Biagio Ciccone. Tutti i diritti riservati.</p>
+                <div
+                    class="max-w-7xl mx-auto px-6 py-6 flex flex-col gap-2 text-sm text-gray-500 md:flex-row md:justify-between"
+                >
+                    <p>
+                        © 2026 Dott. Biagio Ciccone. Tutti i diritti riservati.
+                    </p>
                 </div>
             </div>
         </footer>
